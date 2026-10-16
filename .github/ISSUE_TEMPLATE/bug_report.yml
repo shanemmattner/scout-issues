@@ -3,6 +3,21 @@ description: Something in Scout or the Scout VS Code extension does not work.
 title: "[bug] "
 labels: ["bug", "triage"]
 body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not paste tokens, API keys, passwords, Wi-Fi credentials or private firmware here or in the zip.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - VS Code extension
+        - Probe hardware
+        - CLI
+        - Docs
+    validations:
+      required: true
   - type: textarea
     id: what-happened
     attributes:
@@ -25,5 +40,8 @@ body:
     id: bundle
     attributes:
       label: Report bundle
+      description: "Scout: Report Issue builds a local zip. Nothing is sent automatically. Open it, remove anything private, then drag it into this issue. If you cannot attach it, say why in the box above."
       options:
-        - label: I attached the zip from "Scout: Report Issue" after reading it.
+        - label: I attached the zip from "Scout: Report Issue" after reading it, or I explained why I cannot.
+        - label: The issue and zip contain no tokens, keys or passwords.
+          required: true

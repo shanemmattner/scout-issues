@@ -13,3 +13,5 @@ and its VS Code extension. This repository holds issues only; it has no source c
 You can also email support@ohmic-test.com and attach the zip.
 
 Do not post secrets, keys or private firmware.
+
+Maintainers: see [TRIAGE.md](TRIAGE.md) for labels and the triage flow.
