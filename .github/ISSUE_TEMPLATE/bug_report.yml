@@ -1,0 +1,29 @@
+name: Bug report
+description: Something in Scout or the Scout VS Code extension does not work.
+title: "[bug] "
+labels: ["bug", "triage"]
+body:
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you do, what did you expect, and what happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: "1. Run Scout: Flash Image\n2. ..."
+  - type: textarea
+    id: versions
+    attributes:
+      label: Versions
+      description: Filled in by Scout: Report Issue (VS Code, extension, CLI, firmware, OS).
+      render: text
+  - type: checkboxes
+    id: bundle
+    attributes:
+      label: Report bundle
+      options:
+        - label: I attached the zip from "Scout: Report Issue" after reading it.

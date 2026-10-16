@@ -1,0 +1,20 @@
+name: Feature request
+description: Ask for something Scout does not do yet.
+title: "[feature] "
+labels: ["enhancement", "triage"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem would this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like Scout to do?
+  - type: textarea
+    id: versions
+    attributes:
+      label: Versions
+      render: text
